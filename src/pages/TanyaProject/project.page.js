@@ -50,7 +50,6 @@ class TanyaProject extends Component {
           completely new digital presence for this brand."
           contact={this.scrollToContact}
           image={tanya}
-          content='Tanya M Arora is a fashion designer based out of Delhi. She encapsulates an enormous range of collections, from bridal to partywear. We helped her get a digital presence by portraying her work on a website.'
         />
         <div data-aos="fade-up">
           <ProjectColours
@@ -66,11 +65,7 @@ class TanyaProject extends Component {
           <ProjectSlider image={image} />
         </div>
         <div data-aos="fade-up">
-          <ChallengesDiv
-          question = 'High Resolution Images to render'
-          statement='The website had to display some high quality pictures, which usually takes up a lot of time to load'
-          solution='We set up a pipe stream for loading high resolution images so that images aren’t a reason for the website to become slow!'
-          images={[phone1, phone2]} />
+          <ChallengesDiv images={[phone1, phone2]} />
         </div>
 
         <TechUsed />

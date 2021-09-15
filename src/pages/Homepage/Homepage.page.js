@@ -9,7 +9,6 @@ import Footer from "../../components/Footer/Footer.component";
 import ContactUs2 from "../../components/ContactUs2/Testimonials.component";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import NavBar from "../../components/NAVBAR-DEEPAK/Navbar";
 
 class Homepage extends Component {
   constructor(props) {
@@ -36,7 +35,6 @@ class Homepage extends Component {
     console.log(this.contactRef);
     return (
       <>
-      <NavBar />
         <Header contact={this.scrollToContact} />
         <div data-aos="fade-up">
           <OurServices />

@@ -15,15 +15,15 @@ const Subcomponent = (props) => {
             <tag.Line />
           </tag.NumLine>
         </tag.NumLineContainer>
-        <tag.Heading>{props.question}</tag.Heading>
+        <tag.Heading>Lorem Ipsum</tag.Heading>
         <tag.Para>
-          {props.statement}
-         
+          Hellow this is my intriguing problem that I want to solve
         </tag.Para>
         <br />
         <tag.Para>
-          {props.solution}
-          
+          Solution: I am brilliantly smart so I can solve any problem. I am
+          brilliantly smart so I can solve any problem. I am brilliantly smart
+          so I can solve any problem
         </tag.Para>
       </tag.TextContainer>
       <tag.ImgContainer align={props.align} call={props.first}>

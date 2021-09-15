@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { NavHeading, NavLink, NavLinks, NavLinkButton, Hamburger,
-  Navbar,
-  NavContent,
-  NavItem,
-  NavItems, } from "./NavBar.styles";
+import { NavHeading, NavLink, NavLinks, NavLinkButton } from "./NavBar.styles";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 const NavBar = ({ active, contact }) => {
-  const [isNavVisible, setNavVisible] = useState(false);
   return (
     <>
       <Container fluid style={{ padding: "1em" }}>
@@ -18,7 +13,7 @@ const NavBar = ({ active, contact }) => {
             <NavHeading>PLUTUS</NavHeading>
           </Col>
 
-          <Col lg={5} md={6} sm={9} xs={9} active={!isNavVisible}>
+          <Col lg={5} md={6} sm={9} xs={9}>
             <NavLinks className="align-items-center">
               <Link to="/" style={{ textDecoration: "none", color: "black" }}>
                 <NavLink active={active === "Home"}>Home</NavLink>
@@ -39,16 +34,7 @@ const NavBar = ({ active, contact }) => {
               </Link>
 
               <NavLinkButton onClick={contact}>Let's Talk</NavLinkButton>
-
             </NavLinks>
-            <Hamburger
-        active={isNavVisible}
-        onClick={() => setNavVisible(!isNavVisible)}
-      >
-        <div></div>
-        <div></div>
-        <div></div>
-      </Hamburger>
           </Col>
         </Row>
       </Container>
