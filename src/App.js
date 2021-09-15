@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
-import ReactDOM from "react-dom";
-import Preloader from "./components/Preloader/Preloader";
-import Timer from "./components/Countdown/Timer";
-
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage/Homepage.page";
+import AboutUspage from "./pages/AboutUspage/AboutUspage.page";
+import Portfolio from "./pages/Portfolio/portfolio.page";
+import Project from "./pages/Project/project.page";
+import TGCProject from "./pages/TGCProject/project.page";
+import TanyaProject from "./pages/TanyaProject/project.page";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <h1>
-          Website
-          <br />
-          Coming Soon
-        </h1>
-        <Timer />
-        {/* <Optin /> */}
-        <Preloader />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Homepage} />
+        <Route path="/aboutus" exact component={AboutUspage} />
+        <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/portfolio/project" exact component={Project} />
+        <Route path="/portfolio/thegirlcode" exact component={TGCProject} />
+        <Route path="/portfolio/tanyamarora" exact component={TanyaProject} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
