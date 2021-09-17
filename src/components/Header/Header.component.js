@@ -18,7 +18,7 @@ import graphic4 from "../../assets/tanyagraphic4.png";
 
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../Navbar/Navbar";
+import NavBar from '../NavBar/Navbar'
 import { Link } from "react-router-dom";
 
 class Header extends Component {

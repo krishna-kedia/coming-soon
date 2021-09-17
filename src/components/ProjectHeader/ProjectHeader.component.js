@@ -2,7 +2,7 @@ import React from "react";
 import map from "../../assets/map.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../Navbar/Navbar";
+import NavBar from '../NavBar/Navbar'
 import {
   HeaderTitle,
   HeaderSubtitle,
@@ -58,9 +58,9 @@ export default function ProjectHeader(props) {
             <CompanyNameHeading>{props.companyname}</CompanyNameHeading>
             <ProjectDescription align="left">{props.des}</ProjectDescription>
 
-            <ViewProject>
+            {/* <ViewProject>
               <Line /> <a>view website</a>
-            </ViewProject>
+            </ViewProject> */}
           </ContentDiv>
         </ProjectCol>
         <ProjectCol

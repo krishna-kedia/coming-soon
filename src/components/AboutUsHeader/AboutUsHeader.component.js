@@ -8,7 +8,7 @@ import {
 import laptop from "../../assets/laptop.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../Navbar/Navbar";
+import NavBar from '../NavBar/Navbar'
 import { HeaderTitle, HeaderSubtitle } from "../Header/Header.styles";
 import headerImage from "../../assets/team.png";
 

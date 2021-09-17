@@ -47,6 +47,7 @@ class TGCProject extends Component {
           recent changes and the impact they have made."
           contact={this.scrollToContact}
           image={image}
+          content = ' The girl code is a non-profit organisation that aims to bridge the gender gap in the tech community by hosting free workshops for women. It has chapters in 3 countries and has taught over 2000 girls. We revamped the organisation’s website to include all the recent changes.'
         />
         <div data-aos="fade-up">
           <ProjectColours
@@ -62,7 +63,11 @@ class TGCProject extends Component {
           <ProjectSlider image={twophones} />
         </div>
         <div data-aos="fade-up">
-          <ChallengesDiv images={[phone3, phone2]} />
+          <ChallengesDiv
+           question = 'Keeping the website updated'
+           statement='The organisation holds multiple organisations in a week, and it was getting hard for them to keep the website updated.'
+           solution='We came up with a very simple content management system (CMS) to keep the website updated without having to take down the website!'
+            images={[phone3, phone2]} />
         </div>
 
         <TechUsed />
